@@ -1,0 +1,147 @@
+site_name: Salt AI Docs
+site_url: https://academy.salt.ai
+repo_name: get-salt-AI/SaltAI-Academy
+repo_url: https://github.com/get-salt-AI/SaltAI-Academy
+theme:
+  name: material
+  logo: images/salt-word@2x.png
+  favicon: images/favicon-light.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+markdown_extensions:
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji ''
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg ''
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.keys
+  - attr_list
+  - md_in_html
+extra_css:
+  - stylesheets/theme.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/get-salt-AI
+      name: Salt Github
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/saltai
+      name: Salt Discord
+  analytics:
+    provider: google
+    property: G-MHLEW2T4PQ
+
+plugins:
+  - search
+  - tags
+  # - social:
+  #     cards_layout_options:
+  #       font_family: Inter
+  #       background_color: '#C0BED3'
+  #       color: black
+nav:
+  - Getting Started: index.md
+  - Nodes:
+    - Agents:
+      - Create Agent: nodes/agents/create-agent.md
+      - Google Web Search: nodes/agents/google-web-search.md
+      - Run Agents Team: nodes/agents/run-agents-team.md
+      - Tavily Web Search: nodes/agents/tavily-web-search.md
+      - Web Research Agent: nodes/agents/web-research-agent.md
+      - Web Scraper: nodes/agents/web-scraper.md
+    - Biotech:
+      - Biotech Utils:
+        - A3M Combiner: nodes/biotech/biotech-utils/a3m-combiner.md
+        - Batch PDB: nodes/biotech/biotech-utils/batch-pdb.md
+        - Fasta Combiner: nodes/biotech/biotech-utils/fasta-combiner.md
+        - Load PDB: nodes/biotech/biotech-utils/load-pdb.md
+        - PDB To Fasta: nodes/biotech/biotech-utils/pdb-to-fasta.md
+        - PDB Visualization: nodes/biotech/biotech-utils/pdb-visualization.md
+        - Save To Bucket: nodes/biotech/biotech-utils/save-to-bucket.md
+        - Save To Zip: nodes/biotech/biotech-utils/save-to-zip.md
+      - Functional Prediction:
+        - Evaluate Diversity: nodes/biotech/functional-prediction/evaluate-diversity.md
+        - Evaluate Prot Param: nodes/biotech/functional-prediction/evaluate-prot-param.md
+        - Evaluate Unconditional Initial Guess: nodes/biotech/functional-prediction/evaluate-unconditional-initial-guess.md
+        - Evaluate Unconditional: nodes/biotech/functional-prediction/evaluate-unconditional.md
+        - Haddock: nodes/biotech/functional-prediction/haddock.md
+        - Immunogenicity B-Cell Epiptope: nodes/biotech/functional-prediction/immunogenicity-b-cell-epiptope.md
+        - Immunogenicity Class 1: nodes/biotech/functional-prediction/immunogenicity-class-1.md
+        - Immunogenicity MHC 2: nodes/biotech/functional-prediction/immunogenicity-mhc-2.md
+        - Prodigy: nodes/biotech/functional-prediction/prodigy.md
+      - Protein Generation:
+        - Chroma: nodes/biotech/protein-generation/chroma.md
+        - Genie 2: nodes/biotech/protein-generation/genie-2.md
+        - Rf Diffusion Contigmap Config: nodes/biotech/protein-generation/rf-diffusion-contigmap-config.md
+        - Rf Diffusion Denoiser Config: nodes/biotech/protein-generation/rf-diffusion-denoiser-config.md
+        - RF Diffusion Potentials Config: nodes/biotech/protein-generation/rf-diffusion-potentials-config.md
+        - Rf Diffusion Symmetry Config: nodes/biotech/protein-generation/rf-diffusion-symmetry-config.md
+        - RF Diffusion: nodes/biotech/protein-generation/rf-diffusion.md      
+      - Protein Structure Prediction:
+        - Alphafold Initial Guess: nodes/biotech/protein-structure-prediction/alphafold-initial-guess.md
+        - Alphafold: nodes/biotech/protein-structure-prediction/alphafold.md
+        - Boltz-2 Complex Molecular Assembly: nodes/biotech/protein-structure-prediction/boltz-2-complex-molecular-assembly.md
+        - Boltz-2 Protein Ligand Complex Prediction: nodes/biotech/protein-structure-prediction/boltz-2-protein-ligand-complex-prediction.md
+        - Boltz-2 Protein Structure Prediction: nodes/biotech/protein-structure-prediction/boltz-2-protein-structure-prediction.md
+        - Boltz-2 Structure Refinement: nodes/biotech/protein-structure-prediction/boltz-2-structure-refinement.md
+        - Boltz-2 Virtual-Screening: nodes/biotech/protein-structure-prediction/boltz-2-virtual-screening.md
+        - Colabfold Batch: nodes/biotech/protein-structure-prediction/colabfold-batch.md
+        - Colabfold Search: nodes/biotech/protein-structure-prediction/colabfold-search.md
+        - MSA Search: nodes/biotech/protein-structure-prediction/msa-search.md
+        - Rosetta Fast Relax: nodes/biotech/protein-structure-prediction/rosetta-fast-relax.md
+      - Sequence Prediction:
+        - ProteinMPNN: nodes/biotech/sequence-prediction/protein-mpnn.md
+    - Inputs: 
+      - Draw Mask: nodes/inputs/draw-mask.md
+      - Dynamic Text: nodes/inputs/dynamic-text.md
+      - File: nodes/inputs/file.md
+      - Image: nodes/inputs/image.md
+      - Text: nodes/inputs/text.md
+    # - LLMs: nodes/llms/llms.md
+    - Outputs: 
+      - Output: nodes/outputs/output.md
+      - Writers:
+        - Notion Writer: nodes/outputs/writers/notion-writer.md
+        - Slack Writer: nodes/outputs/writers/slack-writer.md
+    # - Stable Diffusion:
+    #   - Edit Object: nodes/stable-diffusion/edit-object.md
+    #   - Erase: nodes/stable-diffusion/erase.md
+    #   - Inpaint: nodes/stable-diffusion/inpaint.md
+    #   - Outpaint: nodes/stable-diffusion/outpaint.md
+    #   - Remove Background: nodes/stable-diffusion/remove-background.md
+    #   - Stable Diffusion Advanced: nodes/stable-diffusion/stable-diffusion-advanced.md
+    #   - Stable Diffusion Control: nodes/stable-diffusion/stable-diffusion-control.md
+    #   - Stable Diffusion Core: nodes/stable-diffusion/stable-diffusion-core.md
+    #   - Stable Diffusion Ultra: nodes/stable-diffusion/stable-diffusion-ultra.md
+    #   - Upscale Advanced: nodes/stable-diffusion/upscale-advanced.md
+    #   - Upscale Fast: nodes/stable-diffusion/upscale-fast.md
+    - Utilities:
+      - Inspect: nodes/utilities/inspect.md
+      - Regex Search And Match: nodes/utilities/regex-search-and-match.md
+      - Regex Search And Replace: nodes/utilities/regex-search-and-replace.md
+  - Node Builder:
+    - Getting Started with Node Builder: node-builder/getting-started.md
+  - Deployments:
+    - Getting Started with Deployments: deployments/index.md
+    - Webform: deployments/webform.md
+    - API: deployments/api.md

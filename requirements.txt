@@ -1,0 +1,5 @@
+mkdocs-material==9.5.11
+mkdocs-material[imaging]
+Pillow
+cairosvg
+mkdocs-awesome-pages-plugin
