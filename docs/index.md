@@ -1,7 +1,7 @@
 # Welcome to Salt
 
 !!! note
-    This documentation is a work in progress. Check back soon for more details! We are actively working on documenting all of our nodes and features.
+    Boom! WIP Doc. Check back soon for more details! We are actively working on documenting all of our nodes and features.
 
 
 <img src="/images/index.jpg" alt="Salt">
